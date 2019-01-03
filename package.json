@@ -1,0 +1,44 @@
+{
+  "name": "umi-plugin-firebase",
+  "version": "0.0.1",
+  "description": "umi plugin for firebase",
+  "main": "lib/index.js",
+  "scripts": {
+    "pub": "npm run build && npm publish",
+    "test": "echo 'No tests yet.'",
+    "start": "npm run dev",
+    "dev": "babel src --watch --out-dir ./lib",
+    "build": "babel src --out-dir ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemol/umi-plugin-firebase.git"
+  },
+  "keywords": [
+    "umi",
+    "umijs",
+    "firebase",
+    "plugin",
+    "umi-plugin"
+  ],
+  "author": "Leza Lutonda <lemol-c@hotmail.com> (https://github.com/lemol)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lemol/umi-plugin-firebase/issues"
+  },
+  "homepage": "https://github.com/lemol/umi-plugin-firebase#readme",
+  "dependencies": {
+    "firebase": "^5.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-preset-latest-node": "^2.0.2"
+  },
+  "files": [
+    "lib",
+    "template",
+    "src"
+  ]
+}

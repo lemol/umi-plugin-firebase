@@ -14,11 +14,16 @@ export default function (api, opts = {}) {
     }
 
     const config = makeConfig(opts);
+
+    if (process.env.NODE_ENV === 'production' && !config.apiKey) {
+      api.log.error(`In production 'firebase apiKey option' cannot be null.`);
+    }
+
     const indexPath = joinPath('index.js');
     const templatePath = joinTemplatePath('index.js');
 
     const indexTemplate = readFileSync(templatePath, 'utf-8');
-    const indexContent = indexTemplate
+    const indexContent = !config.apiKey ? '' : indexTemplate
       .replace('<%= Config %>', JSON.stringify(config));
 
     writeFileSync(indexPath, indexContent);

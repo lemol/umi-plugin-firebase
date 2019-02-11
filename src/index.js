@@ -41,7 +41,7 @@ export default function (api, opts = {}) {
 }
 
 const defaultOpts = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: process.env.FIREBASE_API_KEY || (process.env.NODE_ENV==='development' ? 'qwertyuiop' : undefined),
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
   databaseURL: process.env.FIREBASE_DATABASE_URL,
   projectId: process.env.FIREBASE_PROJECT_ID,

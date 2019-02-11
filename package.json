@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-firebase",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "umi plugin for firebase",
   "main": "lib/index.js",
   "scripts": {
@@ -28,13 +28,13 @@
   },
   "homepage": "https://github.com/lemol/umi-plugin-firebase#readme",
   "dependencies": {
-    "firebase": "^5.7.2"
+    "firebase": "^5.8.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "babel-preset-latest-node": "^2.0.2"
+    "@babel/preset-env": "^7.3.1",
+    "babel-preset-latest-node": "^3.0.1"
   },
   "files": [
     "lib",

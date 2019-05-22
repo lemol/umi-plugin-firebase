@@ -42,3 +42,12 @@ export default {
 | storageBucket       | string (optional)                | `process.env.FIREBASE_STORAGE_BUCKET`        |
 | messagingSenderId   | string (optional)                | `process.env.FIREBASE_MESSAGING_SENDER_ID`   |
 
+### How to use
+
+After you configure the plugin, you are able to use `firebase app` as usual. But this time you don't need to `initializeApp` your app:
+
+```js
+import app from 'firebase/app';
+
+auth = app.auth();
+```

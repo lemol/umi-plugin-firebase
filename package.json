@@ -28,13 +28,14 @@
   },
   "homepage": "https://github.com/lemol/umi-plugin-firebase#readme",
   "dependencies": {
-    "firebase": "^5.8.2"
+    "@firebase/app": "^0.4.1",
+    "@firebase/auth": "^0.11.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.3.1",
-    "babel-preset-latest-node": "^3.0.1"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-preset-latest-node": "^3.2.1"
   },
   "files": [
     "lib",

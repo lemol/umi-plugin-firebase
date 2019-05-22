@@ -1,4 +1,4 @@
-import app from 'firebase/app';
+import app from '@firebase/app';
 
 const config = <%= Config %>;
 

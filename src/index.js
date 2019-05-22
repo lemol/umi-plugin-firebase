@@ -34,7 +34,8 @@ export default function (api, opts = {}) {
   });
 
   const dependencies = [
-    'firebase',
+    '@firebase/app',
+    '@firebase/auth',
   ];
 
   api.addVersionInfo(dependencies.map(pkgName => `${pkgName}@${require(`${pkgName}/package`).version}`));

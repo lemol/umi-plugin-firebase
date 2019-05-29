@@ -1,5 +1,5 @@
-import app from '@firebase/app';
+import firebase from 'firebase/app';
 
 const config = <%= Config %>;
 
-app.initializeApp(config);
+firebase.initializeApp(config);

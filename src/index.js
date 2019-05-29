@@ -32,13 +32,6 @@ export default function (api, opts = {}) {
   api.addEntryImport({
     source: './firebase/index',
   });
-
-  const dependencies = [
-    '@firebase/app',
-    '@firebase/auth',
-  ];
-
-  api.addVersionInfo(dependencies.map(pkgName => `${pkgName}@${require(`${pkgName}/package`).version}`));
 }
 
 const defaultOpts = {

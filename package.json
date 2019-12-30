@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/lemol/umi-plugin-firebase#readme",
   "dependencies": {
-    "firebase": "^6.1.0"
+    "firebase": "^7.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

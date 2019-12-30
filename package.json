@@ -31,9 +31,9 @@
     "firebase": "^7.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.4.4",
-    "@babel/core": "7.4.5",
-    "@babel/preset-env": "7.4.5",
+    "@babel/cli": "7.7.7",
+    "@babel/core": "7.7.7",
+    "@babel/preset-env": "7.7.7",
     "babel-preset-latest-node": "3.2.1"
   },
   "files": [
